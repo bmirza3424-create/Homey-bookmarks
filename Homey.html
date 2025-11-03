@@ -2,50 +2,46 @@
 <html lang="sv">
 <head>
   <meta charset="UTF-8">
-  <title>Homey Snabbåtkomst</title>
+  <title>Homey Bookmarks</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      color: #333;
-    }
+    body { font-family: sans-serif; background: #f0f0f0; margin: 0; padding: 20px; }
+    h1 { text-align: center; }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
       gap: 15px;
-      margin-top: 30px;
+      margin-top: 20px;
     }
     .card {
       background: white;
+      padding: 12px;
       border-radius: 8px;
-      padding: 15px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      text-align: center;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.03);
     }
     .card a {
       text-decoration: none;
-      color: #0078d4;
+      color: #333;
       font-weight: bold;
+      display: block;
     }
   </style>
 </head>
 <body>
-  <h1>Homey Snabbåtkomst</h1>
+  <h1>📚 Mina Homey-bokmärken</h1>
   <div class="grid">
-    <div class="card">
-      <a href="https://homey.app/device1" target="_blank">Lampor</a>
-    </div>
-    <div class="card">
-      <a href="https://homey.app/flow2" target="_blank">Flöde: Morgon</a>
-    </div>
-    <div class="card">
-      <a href="https://homey.app/favorite3" target="_blank">Favorit: Värme</a>
-    </div>
-    <!-- Lägg till fler kort här -->
+    <div class="card"><a href="edge://newtab/">Ny flik</a></div>
+    <div class="card"><a href="https://www.youtube.com/watch?v=1Vab-UTjaZY">Excel 2019 Kombinationsdiagram</a></div>
+    <div class="card"><a href="https://www.amazon.com.be/-/en/USHINING-Mobile-Phone-Elderly-Function/dp/B08R6YPMYP">USHINING GSM-mobiltelefon</a></div>
+    <div class="card"><a href="https://www.amazon.com.be/-/en/Mobile-Senior-Unlocked-Buttons-Button/dp/B082W1L9XV">Senior Flip Phone (Blue)</a></div>
+    <div class="card"><a href="https://www.nchsoftware.com/select/index.html">NCH Photo Editor</a></div>
+    <div class="card"><a href="https://gemini.google.com/app">Gemini</a></div>
+    <div class="card"><a href="https://www.youtube.com/watch?v=5dZ_lvDgevk">In the Age of AI – YouTube</a></div>
+    <div class="card"><a href="https://iranianuk.com/20231031191201042">22 minuters träning minskar dödsrisk</a></div>
+    <div class="card"><a href="https://www.cision.se/artiklar-och-tips/artiklar/far-jag-anvanda-den-bilden-3-satt-att-kontrollera-att-du-har-lagen-pa-din-sida/">Får jag använda den bilden?</a></div>
   </div>
 </body>
 </html>
